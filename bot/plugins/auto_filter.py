@@ -147,13 +147,13 @@ async def auto_filter(bot, update):
         if len_result != 1:
             result[0].append(
                 [
-                    InlineKeyboardButton("Next ⏩", callback_data=f"navigate(0|next|{query})")
+                    InlineKeyboardButton("𝗡𝗲𝘅𝘁💨", callback_data=f"navigate(0|next|{query})")
                 ]
             )
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"⭕️ 𝗣𝗮𝗴𝗲 𝟭/{len_result if len_result < max_pages else max_pages} ⭕️", callback_data="ignore")
         ])
         
         
@@ -203,7 +203,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Found {(len_results)} Results For Your Query: <code>{query}</code>",
+                text=f"𝕭𝖍𝖚𝖚𝖚𝖚....𝖍𝖆𝖆𝖆....👻𝗙𝗼𝘂𝗻𝗱 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 𝗙𝗼𝗿 𝗬𝗼𝘂 {(len_results)} Results For Your Query: <code>{query}</code><a href="https://t.me/apealkuppiya">𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗕𝘆 ᗩ/し ᏦᑌᑭᑭᏆᎩᗩᵀᴹ 🐣</a>",
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML,
                 reply_to_message_id=update.id
