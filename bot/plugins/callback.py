@@ -271,7 +271,7 @@ async def cb_warn(bot, update: CallbackQuery):
             
             InlineKeyboardButton
                 (
-                    "No", callback_data="close"
+                    "𝗡𝗼 🍎", callback_data="close"
                 )
         ]
     ]
@@ -332,7 +332,7 @@ async def cb_channel_list(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data="settings"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data="settings"
                 ),
             
             InlineKeyboardButton
@@ -434,12 +434,12 @@ async def cb_info(bot, update: CallbackQuery):
                     [
                         InlineKeyboardButton
                             (
-                                "🚨 Disconnect 🚨", callback_data=f"warn({channel_id}|{channel_name}|disconnect)"
+                                "𝗗𝗶𝘀𝗰𝗼𝗻𝗻𝗲𝗰𝘁 ❕", callback_data=f"warn({channel_id}|{channel_name}|disconnect)"
                             ),
                         
                         InlineKeyboardButton
                             (
-                                "Delete ❌", callback_data=f"warn({channel_id}|{channel_name}|c_delete)"
+                                "𝗗𝗲𝗹𝗲𝘁𝗲 🔐", callback_data=f"warn({channel_id}|{channel_name}|c_delete)"
                             )
                     ]
         ]
@@ -449,12 +449,12 @@ async def cb_info(bot, update: CallbackQuery):
                     [
                         InlineKeyboardButton
                             (
-                                "💠 Connect 💠", callback_data=f"warn({channel_id}|{channel_name}|connect)"
+                                "𝗖𝗼𝗻𝗻𝗲𝗰𝘁 🐥", callback_data=f"warn({channel_id}|{channel_name}|connect)"
                             ),
                         
                         InlineKeyboardButton
                             (
-                                "Delete ❌", callback_data=f"warn({channel_id}|{channel_name}|c_delete)"
+                                "𝗗𝗲𝗹𝗲𝘁𝗲 🔐", callback_data=f"warn({channel_id}|{channel_name}|c_delete)"
                             )
                     ]
         ]
@@ -463,7 +463,7 @@ async def cb_info(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Delete Filters ⚠", callback_data=f"warn({channel_id}|{channel_name}|f_delete)"
+                        "𝗗𝗲𝗹𝗲𝘁𝗲 𝗙𝗶𝗹𝘁𝗲𝗿𝘀 ⚠", callback_data=f"warn({channel_id}|{channel_name}|f_delete)"
                     )
             ]
     )
@@ -472,7 +472,7 @@ async def cb_info(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "🔙 Back", callback_data=f"channel_list({chat_id})"
+                        "𝗕𝗮𝗰𝗸 💨", callback_data=f"channel_list({chat_id})"
                     )
             ]
     )
@@ -545,7 +545,7 @@ async def cb_connect(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "🔙 Back", callback_data=f"channel_list({chat_id})"
+                        "𝗕𝗮𝗰𝗸 💨", callback_data=f"channel_list({chat_id})"
                     )
             ]
     )
@@ -617,7 +617,7 @@ async def cb_disconnect(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "🔙 Back", callback_data=f"channel_list({chat_id})"
+                        "𝗕𝗮𝗰𝗸 💨", callback_data=f"channel_list({chat_id})"
                     )
             ]
     )
@@ -664,12 +664,12 @@ async def cb_channel_delete(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"channel_list({chat_id})"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"channel_list({chat_id})"
                 ),
                 
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "𝗖𝗹𝗼𝘀𝗲 🔐", callback_data="close"
                 )
         ]
     ]
@@ -712,12 +712,12 @@ async def cb_filters_delete(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Back", callback_data="settings"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data="settings"
                 ),
             
             InlineKeyboardButton
                 (
-                    "Close", callback_data="close"
+                    "𝗖𝗹𝗼𝘀𝗲 🔐", callback_data="close"
                 )
         ]
     ]
@@ -799,7 +799,7 @@ async def cb_types(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"settings"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"settings"
                 )
         ]
     )
@@ -913,7 +913,7 @@ async def cb_toggle(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"settings"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"settings"
                 )
         ]
     )
@@ -955,7 +955,7 @@ async def cb_config(bot, update: CallbackQuery):
     pm_file_chat  = settings["configs"].get("pm_fchat", False)
     accuracy_point = settings["configs"].get("accuracy", 0.80)
     
-    text=f"<i><b>Configure Your <u><code>{chat_name}</code></u> Group's Filter Settings...</b></i>\n"
+    text=f"<i><b>Configure Your <u><code>{chat_name}</code></u> Group's Filter Settings...💁🏻‍♂️🔧</b></i>\n"
     
     text+=f"\n<i>{chat_name}</i> Current Settings:\n"
 
@@ -1026,7 +1026,7 @@ async def cb_config(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"settings"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"settings"
                 )
         ]
     )
@@ -1100,7 +1100,7 @@ async def cb_max_buttons(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"config({chat_id})"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                 )
         ]
     ]
@@ -1166,7 +1166,7 @@ async def cb_max_page(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"config({chat_id})"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                 )
         ]
 
@@ -1239,7 +1239,7 @@ async def cb_max_results(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"config({chat_id})"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                 )
         ]
     ]
@@ -1274,13 +1274,13 @@ async def cb_show_invites(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Disable ❌", callback_data=f"set(showInv|False|{chat_id}|{value})"
+                        "𝗗𝗶𝘀𝗮𝗯𝗹𝗲 ❌", callback_data=f"set(showInv|False|{chat_id}|{value})"
                     )
             ],
             [
                 InlineKeyboardButton
                     (
-                        "Back 🔙", callback_data=f"config({chat_id})"
+                        "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                     )
             ]
         ]
@@ -1290,18 +1290,18 @@ async def cb_show_invites(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Enable ✔", callback_data=f"set(showInv|True|{chat_id}|{value})"
+                        "𝗘𝗻𝗮𝗯𝗹𝗲 ✔", callback_data=f"set(showInv|True|{chat_id}|{value})"
                     )
             ],
             [
                 InlineKeyboardButton
                     (
-                        "Back 🔙", callback_data=f"config({chat_id})"
+                        "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                     )
             ]
         ]
     
-    text=f"<i>This Config Will Help You To Show Invitation Link Of All Active Chats Along With The Filter Results For The Users To Join.....</i>"
+    text=f"<i>This Config Will Help You To Show Invitation Link Of All Active Chats Along With The Filter Results For The Users To Join.🍎🚶🏻</i>"
     
     reply_markup=InlineKeyboardMarkup(buttons)
     
@@ -1341,7 +1341,7 @@ async def cb_pm_file(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Back 🔙", callback_data=f"config({chat_id})"
+                        "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                     )
             ]
         ]
@@ -1357,7 +1357,7 @@ async def cb_pm_file(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Back 🔙", callback_data=f"config({chat_id})"
+                        "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                     )
             ]
         ]
@@ -1436,7 +1436,7 @@ async def cb_accuracy(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"config({chat_id})"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                 )
         ]
     ]
@@ -1523,7 +1523,7 @@ async def cb_set(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Back 🔙", callback_data=f"config({chat_id})"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data=f"config({chat_id})"
                 ),
             
             InlineKeyboardButton
@@ -1568,7 +1568,7 @@ async def cb_status(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data="settings"
+                    "𝗕𝗮𝗰𝗸 💨", callback_data="settings"
                 ),
             
             InlineKeyboardButton
@@ -1608,18 +1608,18 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/AlbertEinstein_TG"
+                    "My Dev 🐣", url="https://t.me/invisible_einstein"
                 ),
                 
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data="settings"
+                    "𝗕𝗮𝗰𝗸 💁🏻‍♂️🐷", callback_data="settings"
                 )
         ],
         [
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "𝗖𝗹𝗼𝘀𝗲 🧊", callback_data="close"
                 )
         ]
     ]
@@ -1639,12 +1639,12 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
+            InlineKeyboardButton('𝗠𝘆 𝗗𝗲𝘃 🐣', url='https://t.me/invisible_einstein'),
+            InlineKeyboardButton('𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗼𝗱𝗲 🧾', url ='https://t.me/invisible_einstein')
         ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('ᴀʟᴇᴠᴇʟ ᴋᴜᴘᴘɪʏᴀ ɢʀᴏᴜᴘ 🪶', url='https://t.me/apealkuppiya')
         ],[
-            InlineKeyboardButton('Help ⚙', callback_data="help")
+            InlineKeyboardButton('ᴀʟᴇᴠᴇʟ ᴋᴜᴘᴘɪʏᴀ ᴄʜᴀɴɴᴇʟ 🐣', url='https://t.me/alevelkuppiya1')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1659,10 +1659,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "help":
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('About 🚩', callback_data='about')
+            InlineKeyboardButton('𝐇𝐨𝐦𝐞 🐣', callback_data='start'),
+            InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭 💁🏻‍♂️🚶🏻', callback_data='about')
         ],[
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('𝗖𝗹𝗼𝘀𝗲 🔐', callback_data='close')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1677,8 +1677,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('𝐇𝐨𝐦𝐞 🐷', callback_data='start'),
+            InlineKeyboardButton('𝗖𝗹𝗼𝘀𝗲 🩸', callback_data='close')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
