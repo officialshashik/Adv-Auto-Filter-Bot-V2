@@ -81,7 +81,7 @@ async def cb_navg(bot, update: CallbackQuery):
 
     if ((index_val + 1 )== max_pages) or ((index_val + 1) == len(results)): # Max Pages
         temp_results.append([
-            InlineKeyboardButton("⏪ Back", callback_data=f"navigate({index_val}|back|{query})")
+            InlineKeyboardButton("𝗕𝗮𝗰𝗸 💨", callback_data=f"navigate({index_val}|back|{query})")
         ])
 
     elif int(index_val) == 0:
@@ -89,13 +89,13 @@ async def cb_navg(bot, update: CallbackQuery):
 
     else:
         temp_results.append([
-            InlineKeyboardButton("⏪ Back", callback_data=f"navigate({index_val}|back|{query})"),
-            InlineKeyboardButton("Next ⏩", callback_data=f"navigate({index_val}|next|{query})")
+            InlineKeyboardButton("𝗕𝗮𝗰𝗸 💨", callback_data=f"navigate({index_val}|back|{query})"),
+            InlineKeyboardButton("𝗡𝗲𝘅𝘁💨", callback_data=f"navigate({index_val}|next|{query})")
         ])
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"🔰 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"⭕️𝗣𝗮𝗴𝗲 {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} ⭕️", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"<i>𝕭𝖍𝖚𝖚𝖚𝖚....𝖍𝖆𝖆𝖆....👻𝗙𝗼𝘂𝗻𝗱 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 𝗙𝗼𝗿 𝗬𝗼𝘂</i> <code>{leng}</code> <b><i>Results For Your Query:</i></b> <code>{query}</code><a href="https://t.me/apealkuppiya">𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗕𝘆 ᗩ/し ᏦᑌᑭᑭᏆᎩᗩᵀᴹ 🐣</a>"
         
     try:
         await update.message.edit(
@@ -176,42 +176,42 @@ async def cb_settings(bot, update: CallbackQuery):
     bot_status = await bot.get_me()
     bot_fname= bot_status.first_name
     
-    text =f"<i>{bot_fname}'s</i> Settings Pannel.....\n"
-    text+=f"\n<i>You Can Use This Menu To Change Connectivity And Know Status Of Your Every Connected Channel, Change Filter Types, Configure Filter Results And To Know Status Of Your Group...</i>"
+    text =f"<b>{bot_fname}'s</b> <b>ꜱᴇᴛᴛɪɴɢꜱ ᴘᴀɴɴᴇʟ💁🏻‍♂️🔧.....</b>\n"
+    text+=f"\n<b>You Can Use This Menu To Change Connectivity And Know Status Of Your Every Connected Channel, Change Filter Types, Configure Filter Results And To Know Status Of Your Group...🐥🐷</b>"
     
     buttons = [
         [
             InlineKeyboardButton
                 (
-                    "Channels", callback_data=f"channel_list({chat_id})"
+                    "𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀 🐣", callback_data=f"channel_list({chat_id})"
                 ), 
             
             InlineKeyboardButton
                 (
-                    "Filter Types", callback_data=f"types({chat_id})"
+                    "𝗙𝗶𝗹𝘁𝗲𝗿 𝗧𝘆𝗽𝗲𝘀 🩸", callback_data=f"types({chat_id})"
                 )
         ],
         [
             InlineKeyboardButton
                 (
-                    "Configure 🛠", callback_data=f"config({chat_id})"
+                    "𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲 🛠", callback_data=f"config({chat_id})"
                 )
         ], 
         [
             InlineKeyboardButton
                 (
-                    "Status", callback_data=f"status({chat_id})"
+                    "𝗦𝘁𝗮𝘁𝘂𝘀 📊", callback_data=f"status({chat_id})"
                 ),
             
             InlineKeyboardButton
                 (
-                    "About", callback_data=f"about({chat_id})"
+                    "𝗔𝗯𝗼𝘂𝘁 👻", callback_data=f"about({chat_id})"
                 )
         ],
         [
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "𝗖𝗹𝗼𝘀𝗲 🔐", callback_data="close"
                 )
         ]
     ]
@@ -266,7 +266,7 @@ async def cb_warn(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Yes", callback_data=f"{action}({channel_id}|{channel_name})"
+                    "𝗬𝗲𝘀 🚶🏻", callback_data=f"{action}({channel_id}|{channel_name})"
                 ), 
             
             InlineKeyboardButton
